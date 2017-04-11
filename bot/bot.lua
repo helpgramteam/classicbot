@@ -88,7 +88,6 @@ function create_config( )
     "mute-time",
     "del",
 	"lock-fosh",
-	"abjad",
 	"BotOn_Off",
 	"id",
 	"magham",
@@ -103,7 +102,7 @@ function create_config( )
     admins = {},
     disabled_channels = {},
     moderation = {data = './data/moderation.json'},
-    info_text = [[》dr_bot5 v3
+    info_text = [[》@helpgram_team v3
 
 🔰Our channel :
 》@helpgram_dr_bot《
