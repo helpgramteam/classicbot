@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-cd $HOME/helpgram
+cd $HOME/classicbot
 
 install() {
 	    cd tg
