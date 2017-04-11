@@ -1,7 +1,7 @@
 tdcli = dofile('./tg/tdcli.lua')
 serpent = (loadfile "./libs/serpent.lua")()
 feedparser = (loadfile "./libs/feedparser.lua")()
-our_id = 123456689 -- Put Here Your Bot ID
+our_id = 353792732 -- Put Here Your Bot ID
 URL = require "socket.url"
 http = require "socket.http"
 https = require "ssl.https"
@@ -96,7 +96,6 @@ function create_config( )
 	"warning",
 	"write",
 	"azan",
-    "abjad",
 	"mypic"
 	
  },

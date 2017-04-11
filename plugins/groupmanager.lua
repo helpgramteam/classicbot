@@ -2998,6 +2998,8 @@ _set Auto leave_
 
 _You Can Use_ *[!/#]* _To Run The Commands_
 
+_ @helpgram_team
+
 ]]
 
 elseif lang then
@@ -3022,6 +3024,7 @@ text = [[
 ➖➖➖➖➖
 در حال حاضر زبان ربات فارسی میباشد برای تغییر زبان دستور زیر را ارسال کنید
 *!setlang en*
+_ @helpgram_team
 ...
 ]]
 end
@@ -3078,6 +3081,7 @@ text2 = [[
 🔒*!lock fosh*
 🔓*!unlock fosh*
 〰〰〰〰〰
+_ @helpgram_team
 ...
 ]]
 return text2
@@ -3153,6 +3157,7 @@ text3 = [[
 🔇*!mt 0 1*
 🔊*!unmt*
 〰〰〰〰〰
+_ @helpgram_team
 ...
 ]]
 return text3
@@ -3261,6 +3266,8 @@ text4 = [[
 ⚙*!autoleave enable*
 ⚙*!autoleave disable*
 💬 تنظیم خارج شدن ربات
+
+_ @helpgram_team
 ...
 ]]
 return text4
@@ -3268,7 +3275,7 @@ end
 
 if matches[1] == "انلاینی" and is_mod(msg) then
 text5 = [[
-😎yes. 
+😎 _ @helpgram_team 
 ]]
 return text5 
 end
