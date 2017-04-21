@@ -2999,7 +2999,7 @@ _set Auto leave_
 _You Can Use_ *[!/#]* _To Run The Commands_
 _Change the language to farsi : !setlang fa_
 
-_ @helpgram_team
+_ @helpgramteam
 
 ]]
 
@@ -3024,7 +3024,7 @@ text = [[
 ➖➖➖➖➖
 در حال حاضر زبان ربات فارسی میباشد برای تغییر زبان دستور زیر را ارسال کنید
 *!setlang en*
-_ @helpgram_team
+_ @helpgramteam
 ...
 ]]
 end
@@ -3083,7 +3083,7 @@ text2 = [[
 〰〰〰〰〰
 در زدن دستورات به فاصله حروف دقت 
 
-_ @helpgram_team
+_ @helpgramteam
 ...
 ]]
 return text2
@@ -3160,7 +3160,7 @@ text3 = [[
 🔊*!unmt*
 〰〰〰〰〰
 در زدن دستورات به فاصله حروف دقت کنید
-_ @helpgram_team
+_ @helpgramteam
 ...
 ]]
 return text3
@@ -3269,14 +3269,14 @@ text4 = [[
 ...
 در زدن دستورات به فاصله حروف دقت کنید
 
-_ @helpgram_team
+_ @helpgramteam
 ]]
 return text4
 end
 
 if matches[1] == "انلاینی" and is_mod(msg) then
 text5 = [[
-😎 _ @helpgram_team 
+😎 _ @helpgramteam 
 ]]
 return text5 
 end

@@ -1,34 +1,36 @@
-ï»¿local function delmsg (i,naji)
-    msgs = i.msgs 
-    for k,v in pairs(naji.messages_) do
-        msgs = msgs - 1
-        tdcli.deleteMessages(v.chat_id_,{[0] = v.id_}, dl_cb, cmd)
-        if msgs == 1 then
-            tdcli.deleteMessages(naji.messages_[0].chat_id_,{[0] = naji.messages_[0].id_}, dl_cb, cmd)
-            return false
-        end
-    end
-    tdcli.getChatHistory(naji.messages_[0].chat_id_, naji.messages_[0].id_,0 , 100, delmsg, {msgs=msgs})
+local function delmsg (arg,data)
+for k,v in pairs(data.messages_) do
+tdcli.deleteMessages(v.chat_id_,{[0] = v.id_})
+end
 end
 local function run(msg, matches)
-    if matches[1] == 'deel' and is_owner(msg) then
-        if tostring(msg.to.id):match("^-100") then 
-            if tonumber(matches[2]) > 1000 or tonumber(matches[2]) < 1 then
-                return  'ğŸš« *1000*> _ØªØ¹Ø¯Ø§Ø¯ Ù¾ÛŒØ§Ù… Ù‡Ø§ÛŒ Ù‚Ø§Ø¨Ù„ Ù¾Ø§Ú© Ø³Ø§Ø²ÛŒ Ø¯Ø± Ù‡Ø± Ø¯ÙØ¹Ù‡_ >*1* ğŸš«'
-            else
-				tdcli.getChatHistory(msg.to.id, msg.id,0 , 100, delmsg, {msgs=matches[2]})
-				return "`"..matches[2].." `_Ù¾ÛŒØ§Ù… Ø§Ø®ÛŒØ± Ø¨Ø§ Ù…ÙˆÙÙ‚ÛŒØª Ù¾Ø§Ú©Ø³Ø§Ø²ÛŒ Ø´Ø¯Ù†Ø¯_ ğŸš®"
-            end
-        else
-            return 'âš ï¸ _Ø§ÛŒÙ† Ù‚Ø§Ø¨Ù„ÛŒØª ÙÙ‚Ø· Ø¯Ø± Ø³ÙˆÙ¾Ø±Ú¯Ø±ÙˆÙ‡ Ù…Ù…Ú©Ù† Ø§Ø³Øª_ âš ï¸'
-        end
-    end
+    if matches[1] == 'del' then
+    if msg.chat_id_:match("^-100") then
+       if is_owner(msg) or is_mod(msg) then
+          if tonumber(matches[2]) > 100 or tonumber(matches[2]) < 1 then
+             pm = '_ 100> ÊÚÏÇÏ íÇã åÇí ŞÇÈá ÍĞİ åÑ ÏİÚå >1 _'
+             tdcli.sendMessage(msg.chat_id_, data.msg.id_, 1, pm, 1, 'html')
+             else
+          tdcli_function ({
+    ID = "GetChatHistory",
+    chat_id_ = msg.chat_id_,
+    from_message_id_ = 0,
+    offset_ = 0,
+    limit_ = tonumber(matches[2])
+  }, delmsg, nil)
+             pm ='*'..matches[2]..'* _íÇã ÇÎíÑ Ç˜ ÔÏ_'
+             tdcli.sendMessage(msg.chat_id_, msg.id_, 1, pm, 1, 'html')
+         end
+     end
+ else pm ='Çíä Çã˜Çä İŞØ ÏÑ _ÓæÑ Ñæå_ ãã˜ä ÇÓÊ.'
+    tdcli.sendMessage(msg.chat_id_, msg.id_, 1, pm, 1, 'html')
 end
+end
+end
+
 return {
     patterns = {
-        '^[!#/]([Dd][Ee][Ee][Ll]) (%d*)$',
+        '^[!#/]([Dd][Ee][Ll]) (%d*)$'
     },
     run = run
 }
-
--- @helpgram_team
