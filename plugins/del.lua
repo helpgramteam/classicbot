@@ -34,3 +34,6 @@ return {
     },
     run = run
 }
+-- http://permag.ir
+-- @permag_ir
+-- @permag_bots

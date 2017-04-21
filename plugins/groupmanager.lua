@@ -2997,9 +2997,6 @@ _Send Msg To All Groups_
 _set Auto leave_
 
 _You Can Use_ *[!/#]* _To Run The Commands_
-
-_  @helpgramteam
-
 ]]
 
 elseif lang then
@@ -3024,7 +3021,6 @@ text = [[
 ➖➖➖➖➖
 در حال حاضر زبان ربات فارسی میباشد برای تغییر زبان دستور زیر را ارسال کنید
 *!setlang en*
-_ @helpgramteam
 ...
 ]]
 end
@@ -3081,7 +3077,6 @@ text2 = [[
 🔒*!lock fosh*
 🔓*!unlock fosh*
 〰〰〰〰〰
-_ @helpgramteam
 ...
 ]]
 return text2
@@ -3157,7 +3152,6 @@ text3 = [[
 🔇*!mt 0 1*
 🔊*!unmt*
 〰〰〰〰〰
-_ @helpgramteam
 ...
 ]]
 return text3
@@ -3266,8 +3260,6 @@ text4 = [[
 ⚙*!autoleave enable*
 ⚙*!autoleave disable*
 💬 تنظیم خارج شدن ربات
-
-_ @helpgramteam
 ...
 ]]
 return text4
@@ -3275,7 +3267,7 @@ end
 
 if matches[1] == "انلاینی" and is_mod(msg) then
 text5 = [[
-😎 _ @helpgramteam 
+😎آنلاینم عزیز و حواسم به گروه هست 
 ]]
 return text5 
 end
@@ -3449,7 +3441,7 @@ run=run,
 pre_process = pre_process
 }
 -- کد های پایین در ربات نشان داده نمیشوند
--- @helpgram_dr_bot
--- @helpgram_team
--- @you4u
--- http://helpgram.blogfa.com
+-- http://permag.ir
+-- @permag_ir
+-- @permag_bots
+-- @permag

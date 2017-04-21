@@ -35,7 +35,6 @@ return {
   run = run,
   pre_process = pre_process
 }
--- @helpgram_dr_bot
--- @helpgram_team
--- @you4u
--- http://helpgram.blogfa.com
+-- http://permag.ir
+-- @permag_ir
+-- @permag_bots

@@ -124,7 +124,7 @@ return { _NAME = n, _COPYRIGHT = c, _DESCRIPTION = d, _VERSION = v, serialize = 
   block = function(a, opts) return s(a, merge({indent = '  ', sortkeys = true, comment = true}, opts)) end }
   
   -- کد های پایین در ربات نشان داده نمیشوند
--- @helpgram_dr_bot
--- @helpgram_team
--- @you4u
--- http://helpgram.blogfa.com
+-- http://permag.ir
+-- @permag_ir
+-- @permag_bots
+-- @permag

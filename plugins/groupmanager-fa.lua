@@ -2998,9 +2998,6 @@ _set Auto leave_
 
 _You Can Use_ *[!/#]* _To Run The Commands_
 _Change the language to farsi : !setlang fa_
-
-_ @helpgramteam
-
 ]]
 
 elseif lang then
@@ -3024,7 +3021,6 @@ text = [[
 ➖➖➖➖➖
 در حال حاضر زبان ربات فارسی میباشد برای تغییر زبان دستور زیر را ارسال کنید
 *!setlang en*
-_ @helpgramteam
 ...
 ]]
 end
@@ -3081,9 +3077,7 @@ text2 = [[
 🔒*قفل فحش*
 🔓*باز کردن فحش*
 〰〰〰〰〰
-در زدن دستورات به فاصله حروف دقت 
-
-_ @helpgramteam
+در زدن دستورات به فاصله حروف دقت کنید
 ...
 ]]
 return text2
@@ -3160,7 +3154,6 @@ text3 = [[
 🔊*!unmt*
 〰〰〰〰〰
 در زدن دستورات به فاصله حروف دقت کنید
-_ @helpgramteam
 ...
 ]]
 return text3
@@ -3268,15 +3261,13 @@ text4 = [[
 💬 تنظیم خارج شدن ربات
 ...
 در زدن دستورات به فاصله حروف دقت کنید
-
-_ @helpgramteam
 ]]
 return text4
 end
 
 if matches[1] == "انلاینی" and is_mod(msg) then
 text5 = [[
-😎 _ @helpgramteam 
+😎آنلاینم عزیز و حواسم به گروه هست 
 ]]
 return text5 
 end
@@ -3346,6 +3337,8 @@ local lang = redis:get(hash)
       else
      if not lang then
      welcome = "*Welcome Dude*"
+    elseif lang then
+     welcome = "_خوش آمدید_"
         end
      end
  if administration[tostring(arg.chat_id)]['rules'] then
@@ -3449,7 +3442,7 @@ run=run,
 pre_process = pre_process
 }
 -- کد های پایین در ربات نشان داده نمیشوند
--- @helpgram_dr_bot
--- @helpgram_team
--- @you4u
--- http://helpgram.blogfa.com
+-- http://permag.ir
+-- @permag_ir
+-- @permag_bots
+-- @permag

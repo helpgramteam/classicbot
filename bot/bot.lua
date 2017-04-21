@@ -1,7 +1,7 @@
 tdcli = dofile('./tg/tdcli.lua')
 serpent = (loadfile "./libs/serpent.lua")()
 feedparser = (loadfile "./libs/feedparser.lua")()
-our_id = 353792732 -- Put Here Your Bot ID
+our_id = 123456789 -- Put Here Your Bot ID
 URL = require "socket.url"
 http = require "socket.http"
 https = require "ssl.https"
@@ -87,34 +87,26 @@ function create_config( )
     "expiretime",
     "mute-time",
     "del",
-	"lock-fosh",
-	"BotOn_Off",
-	"id",
-	"magham",
-	"setnerkh",
-	"warning",
-	"write",
-	"azan",
-	"mypic"
+	"lock-fosh"
 	
  },
-    sudo_users = {242008887},
+    sudo_users = {123456789},
     admins = {},
     disabled_channels = {},
     moderation = {data = './data/moderation.json'},
-    info_text = [[》@helpgram_team v3
+    info_text = [[》permag.ir v3
 
 🔰Our channel :
-》@helpgram_dr_bot《
+》@permag_bots《
 
 🔰Our channel2 :
-》@helpgram_team《
+》@permag_ir《
 
 🔰Our channel3 :
-》@you4u《
+》@permag《
 
 🔰Our website :
-》http://helpgram.blogfa.com
+》http://permag.ir
 ]],
   }
   serialize_to_file(config, './data/config.lua')
@@ -902,8 +894,7 @@ elseif msg.content_.ID == "MessageGame" then
   end
 
 end
-
--- @helpgram_dr_bot
--- @helpgram_team
--- @you4u
--- http://helpgram.blogfa.com
+-- http://permag.ir
+-- @permag_ir
+-- @permag_bots
+-- @permag

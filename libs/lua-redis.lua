@@ -1141,7 +1141,7 @@ return redis
 
 
 -- کد های پایین در ربات نشان داده نمیشوند
--- @helpgram_dr_bot
--- @helpgram_team
--- @you4u
--- http://helpgram.blogfa.com
+-- http://permag.ir
+-- @permag_ir
+-- @permag_bots
+-- @permag
